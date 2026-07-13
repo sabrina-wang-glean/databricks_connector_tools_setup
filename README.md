@@ -145,6 +145,22 @@ python validation/scripts/validate_tools_oauth.py \
 
 ---
 
+## Functional test in Glean
+
+Pre-flight validation only confirms the OAuth configuration — it does **not** replace an end-to-end test in Glean. After completing the setup, validate the integration with a simple functional test.
+
+The easiest approach is a scratch Agent:
+
+1. Create a new Agent.
+2. Add a single text input named `query`.
+3. Add a Databricks step using either **Search Databricks with Genie** or **Search Databricks with SQL**.
+4. Pass `[[query]]` into the Databricks step.
+5. Add a **Respond** step and test the Agent in Preview.
+
+Alternatively, test the Databricks tool directly in **Glean Assistant**.
+
+---
+
 ## Common pitfalls
 
 ### 1. Mixing up connector auth and tool auth
@@ -194,7 +210,9 @@ If these flags are not set, the actions will not appear even after OAuth is conf
 
 ## Reference links
 
+- [Glean Databricks connector](https://docs.glean.com/connectors/native/databricks/)
 - [Glean Databricks tools setup](https://docs.glean.com/administration/tools/setup-tools/databricks-tools-setup)
+- [Glean Databricks tools overview](https://docs.glean.com/tools/connector/databricks-tools)
 - [Databricks OAuth U2M — user auth](https://docs.databricks.com/aws/en/dev-tools/auth/oauth-u2m/)
 - [Databricks OAuth M2M — service principal](https://docs.databricks.com/aws/en/dev-tools/auth/oauth-m2m/)
 - [Databricks App Connections](https://docs.databricks.com/aws/en/integrations/enable-disable-oauth/)
