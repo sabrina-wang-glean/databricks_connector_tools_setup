@@ -1,6 +1,6 @@
 # Databricks in Glean Setup Guide
 
-> For questions or access to the validation scripts, ping **sabrina.wang@glean.com**
+> For questions, ping **sabrina.wang@glean.com**
 
 ## Repository structure
 
