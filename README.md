@@ -1,4 +1,5 @@
-# Databricks in Glean Setup Guide
+# Databricks Connector + Tools Setup Lab / Validation Toolkit
+A practical, screenshot-led companion to the official documentation for configuring both the Databricks connector and Genie/SQL tools. It covers the non-obvious M2M vs. U2M split, exact setup fields, common failure modes, and some preflight validation scripts customer can run in their databricks notebooks, or their IDE.
 
 > For questions, ping **sabrina.wang@glean.com**
 
